@@ -11,11 +11,19 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+// Authentification
+Route::group(['prefix' => 'admin'], function(){
+	Route::get('/', [
+		'middleware' => 'auth',
+    	'uses' => 'IndexController@init'
+	]);
+});
 
-Route::get('home', 'HomeController@index');
+// Authentication routes...
+Route::get('admin/auth/login', 'Auth\AuthController@getLogin');
+Route::post('admin/auth/login', 'Auth\AuthController@postLogin');
+Route::get('admin/auth/logout', 'Auth\AuthController@getLogout');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+// Registration routes...
+Route::get('admin/auth/register', 'Auth\AuthController@getRegister');
+Route::post('admin/auth/register', 'Auth\AuthController@postRegister');

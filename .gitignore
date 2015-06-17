@@ -1,15 +1,8 @@
-.DS_Store
+I.DS_Store
 Thumbs.db
 /vendor
 /node_modules
 .env
 
-/app
-/bootstrap
-/config
-/database
 /node_modules
-/resources
-/storage
-/tests
 /public/template/node_modules
