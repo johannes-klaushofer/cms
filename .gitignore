@@ -2,6 +2,4 @@ I.DS_Store
 Thumbs.db
 /node_modules
 .env
-
-/node_modules
 /public/template/node_modules

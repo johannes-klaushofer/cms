@@ -1,6 +1,7 @@
 <?php
-return [
-    'modules'=>array(
-        "cms"
-    )
-];
+	return [
+		'modules' => array(
+			'cms'
+		)
+	];
+?>

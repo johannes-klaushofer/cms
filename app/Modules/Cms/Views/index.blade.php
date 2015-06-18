@@ -1,1 +1,3 @@
-juhu
+<?php
+	echo 'asdf';
+?>

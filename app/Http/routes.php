@@ -15,7 +15,7 @@
 Route::group(['prefix' => 'admin'], function(){
 	Route::get('/', [
 		'middleware' => 'auth',
-    	'uses' => 'IndexController@init'
+    	'uses' => 'DashboardController@init'
 	]);
 });
 

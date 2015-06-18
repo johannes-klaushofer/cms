@@ -13,9 +13,6 @@
 	use App\Http\Controllers\Controller;
 
 	class Cms extends Controller{
-		public function getAfterFilters(){
-			return 'sepp';
-		}
 		public function index(){
 			return 'sssss';
 		}
