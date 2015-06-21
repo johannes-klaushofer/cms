@@ -1,7 +1,5 @@
 <?php
-	Route::group(array('module' => 'Cms', 'namespace' => 'App\Modules\Cms\Controllers'), function(){
-		Route::get('admin/cms/{view?}', ['middleware' => 'auth', function($view = 'index'){
-			return view('cms::'.$view);
-		}]);
+	Route::group(array('module' => 'Cms', 'namespace' => 'App\Modules\Cms\Controllers', 'middleware' => 'auth'), function(){
+		Route::get('admin/cms/{view?}', 'Cms@index');
 	});
 ?>

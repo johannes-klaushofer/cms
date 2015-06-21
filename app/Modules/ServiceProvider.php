@@ -1,8 +1,7 @@
 <?php
     namespace App\Modules;
 
-    class ServiceProvider extends  \Illuminate\Support\ServiceProvider{
-
+    class ServiceProvider extends \Illuminate\Support\ServiceProvider{
         public function boot(){
             $modules = config('module.modules');
             while (list(,$module) = each($modules)){
@@ -14,7 +13,8 @@
                 }
             }
         }
-        public function register(){}
-
+        public function register(){
+			//
+		}
     }
 ?>
