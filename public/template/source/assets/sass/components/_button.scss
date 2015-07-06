@@ -1,0 +1,38 @@
+.btn_group {
+	padding-right:20px;
+	font-size:0;
+	display:inline-block;
+	.btn {
+		margin-right:1px;
+	}
+}
+.btn {
+	position:relative;
+	height:30px;
+	line-height:30px;
+	border:1px solid $color-gray-mid;
+	color:$color-black;
+	font-size:$med-font-size;
+	display:inline-block;
+	padding:0 15px;
+	font-weight:bold;
+	text-decoration:none;
+	background:$color-white;
+	&:hover {
+		background-color:$color-gray-super-light;
+	}
+	&:active {
+		background-color:$color-gray-super-mid-light;
+	}
+	&.blue {
+		background-color:$color-theme;
+		color:$color-white;
+		border-color:$color-theme-super-dark;
+		&:hover {
+			background-color:$color-theme-dark;
+		}
+		&:active {
+			background-color:$color-theme-super-dark;
+		}
+	}
+}

@@ -1,0 +1,143 @@
+.sidebar {
+	position:absolute;
+	left:0;
+	top:0;
+	width:15%;
+	height:100%;
+	background:$color-gray-dark;
+	.search {
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:92px;
+		z-index:10;
+		.inner {
+			position:relative;
+			overflow:hidden;
+			padding:30px;
+			border-bottom:2px solid $color-gray-mid-dark;
+		}
+		input {
+			background-color:$color-black;
+			border-color:$color-gray-mid-dark;
+			color:#fff;
+		}
+	}
+	.nav {
+		position:absolute;
+		left:0;
+		top:92px;
+		width:100%;
+		height:100%;
+		z-index:9;
+		.inner {
+			position:relative;
+			overflow:hidden;
+			ul {
+				margin:0;
+				li {
+					background:none;
+					a {
+						min-height:30px;
+						line-height:30px;
+						padding:5px 10px 5px 4px;
+						color:#fff;
+						font-size:$sidebar-font-size;
+						text-decoration:none;
+						display:block;
+						position:relative;
+						&:hover {
+							background:$color-black;
+							&:before {
+								content:"";
+								position:absolute;
+								left:0;
+								top:0;
+								width:4px;
+								height:100%;
+								background:$color-theme;
+								z-index:10;
+							}
+						}
+						&.small {
+							font-size:$small-font-size;
+						}
+					}
+					&.active > a {
+						background:$color-black;
+						&:before {
+							content:"";
+							position:absolute;
+							left:0;
+							top:0;
+							width:4px;
+							height:100%;
+							background:$color-theme;
+							z-index:10;
+						}
+						span {
+							-webkit-transform:rotate(90deg);
+							-moz-transform:rotate(90deg);
+							transform:rotate(90deg);
+						}
+					}
+					&.active > ul {
+						background:$color-gray-extra-dark;
+						border-bottom:1px solid $color-black;
+						li {
+							a {
+								&:hover {
+									background:$color-gray-dark;
+									&:before {
+										display:none;
+									}
+								}
+							}
+						}
+						
+					}
+				}
+				ul {
+					li {
+						a {
+							padding:0 10px 0 20px;
+						}
+						&.active {
+							> a {
+								background:$color-gray-dark;
+								&:before {
+									display:none;
+								}
+							}
+							ul {
+								border:none;
+							}
+						}
+					}
+					ul {
+						li {
+							a {
+								padding-left:40px;
+							}
+						}
+						ul {
+							li {
+								a {
+									padding-left:60px;
+								}
+							}
+							ul {
+								li {
+									a {
+										padding-left:80px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

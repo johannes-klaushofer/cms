@@ -1,0 +1,41 @@
+.icon {
+	background:url(../svg/sprite.svg) no-repeat 0 0;
+	vertical-align:top;
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	width:30px;
+	height:30px;
+	line-height:30px;
+	position:relative;
+	margin:0px;
+	text-decoration:none;
+}
+.icon_blank {
+	background:none;
+}
+.icon_a_r_w {
+	background-position:0 0;
+}
+.icon_a_b_w {
+	background-position:0 -30px;
+}
+.icon_a_l_w {
+	background-position:0 -60px;
+}
+.icon_a_t_w {
+	background-position:0 -90px;
+}
+.icon_a_r_w_t {
+	background-position:0 -120px;
+}
+.icon_a_b_w_t {
+	background-position:0 -150px;
+}
+.icon_a_l_w_t {
+	background-position:0 -180px;
+}
+.icon_a_t_w_t {
+	background-position:0 -210px;
+}

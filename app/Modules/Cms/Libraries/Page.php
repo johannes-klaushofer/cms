@@ -15,5 +15,8 @@
 				return $pageData;
 			}
 		}
+		static function test(){
+			return 'asdf';
+		}
 	}
 ?>

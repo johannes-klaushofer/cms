@@ -1,0 +1,45 @@
+.content {
+	position:absolute;
+	left:15%;
+	top:0;
+	width:85%;
+	height:100%;
+	.content_top {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:122px;
+		background:$color-gray-light;
+		border-bottom:2px solid $color-gray-mid-light;
+		z-index:10;
+		.inner {
+			position:relative;
+			height:100%;
+			border-left:2px solid $color-gray-mid-light;
+			padding:20px 20px 0 40px;
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing:border-box;
+		}
+	}
+	.content_main {
+		position:absolute;
+		top:124px;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:9;
+		border-left:2px solid $color-gray-mid-light;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+		.inner {
+			position:relative;
+			overflow:hidden;
+		}
+	}
+	.jspDrag {
+		background:$color-black;
+	}
+}

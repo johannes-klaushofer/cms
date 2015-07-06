@@ -1,0 +1,1 @@
+<script src="/template/assets/js/javascript.min.js" type="text/javascript"></script>
