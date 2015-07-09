@@ -6,7 +6,10 @@
 	</div>
 	<div class="nav container_scroll">
 		<div class="inner">
-			<ul>
+			<ul class="menu">
+				<li><a href="#"><span class="icon icon_a_r_w openclose">&nbsp;</span>www.joh3rd.at</a></li>
+				<li><a href="#"><span class="icon icon_a_r_w openclose">&nbsp;</span>www.dlaabmayr.com</a></li>
+				<!--
 				<li><a href="#"><span class="icon icon_blank">&nbsp;</span>Home</a></li>
 				<li class="active"><a href="#"><span class="icon icon_a_r_w">&nbsp;</span>Produkte</a>
 					<ul>
@@ -40,6 +43,7 @@
 				</li>
 				<li><a href="#"><span class="icon icon_a_r_w">&nbsp;</span>Service</a></li>
 				<li><a href="#"><span class="icon icon_a_r_w">&nbsp;</span>Kontakt</a></li>
+				-->
 			</ul>
 		</div>
 	</div>

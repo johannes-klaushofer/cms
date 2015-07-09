@@ -36,6 +36,10 @@
 			overflow:hidden;
 			ul {
 				margin:0;
+				width:100%;
+				&.closed {
+					display:none;
+				}
 				li {
 					background:none;
 					a {

@@ -2,14 +2,20 @@
 	header('Content-Type: application/json');
 	
 	$return = array(
-		'count' => 3,
-		'html' => '
-			<ul>
-				<li><a href="#"><span class="icon icon_blank">&nbsp;</span>Sub 1</a></li>
-				<li><a href="#"><span class="icon icon_blank">&nbsp;</span>Sub 2</a></li>
-				<li><a href="#"><span class="icon icon_blank">&nbsp;</span>Sub 3</a></li>
-			</ul>
-		'
+		'pages' => array(
+			array(
+				'id' => 1,
+				'name' => 'Testseite'
+			),
+			array(
+				'id' => 2,
+				'name' => 'Testseite 2'
+			),
+			array(
+				'id' => 3,
+				'name' => 'Lorem ipsum dolor'
+			)
+		)
 	);
 	
 	$return = json_encode($return);

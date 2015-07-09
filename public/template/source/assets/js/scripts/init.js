@@ -25,4 +25,24 @@ $(document).ready(function(){
 	});
 	
 	$(window).trigger('resize');
+	
+	// ckeditor
+	$('.editor').each(function(){
+		CKEDITOR.replace($(this).attr('id'), {
+			//
+		});
+	});
+	
+	// menu
+	$('.menu').pageTree({
+		//
+	});
+	
+	// tabs
+	$('.tabs_nav').each(function(){
+		var tabsNav = $(this);
+		tabsNav.tabs({
+			container:$('.tabs[data-connect="'+tabsNav.attr('data-connect')+'"]')
+		});
+	});
 });

@@ -70,7 +70,7 @@ gulp.task('sass', function () {
 			.src(srcPath + 'assets/js/*.js')
 			.pipe(include())
 			.pipe(sourcemaps.init())
-			.pipe(uglify())
+			//.pipe(uglify())
 			.on("error", notify.onError({
 		        message: 	"Error: <%= error.message %>",
 		        title: 		"Error running scripts task"

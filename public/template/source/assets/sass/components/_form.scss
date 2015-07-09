@@ -1,0 +1,51 @@
+input, select, textarea {
+	background:#fff;
+	border:1px solid $color-gray-mid;
+	height:30px;
+	line-height:30px;
+	padding:0 10px;
+	width:100%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:$med-font-size;
+}
+input[type="checkbox"], input[type="radio"] {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	padding:0;
+	margin-top:7px;
+	float:left;
+}
+textarea {
+	min-height:100px;
+	resize:none;
+}
+.field_row {
+	padding-bottom:20px;
+	label, .label {
+		float:left;
+		min-height:30px;
+		line-height:30px;
+		display:block;
+		padding:0 10px 0 0;
+		width:15%;
+	}
+	.field {
+		float:left;
+		width:50%;
+		font-size:$med-font-size;
+		label {
+			float:left;
+			padding:0 30px 0 10px;
+			width:auto;
+		}
+	}
+	input, select, textarea {
+		&:focus {
+			background-color:$color-gray-super-light;
+		}
+	}
+}
